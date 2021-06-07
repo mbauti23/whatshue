@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name = "redHue">65300</integer>
+    <integer name = "blueHue">47000</integer>
+    <integer name = "yellowHue">10000</integer>
+    <integer name = "greenHue">28000</integer>
+</resources>

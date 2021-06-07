@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whatsnumber1.rargee.ChooseLights"
+    android:background="#232323">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/rainbowHighlight"
+        android:visibility="visible"
+        />
+
+    <ScrollView
+        android:id="@+id/lightList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/acceptButton"
+        android:layout_below="@+id/rainbowHighlight">
+
+        <LinearLayout
+            android:id="@+id/lightListHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+
+    <Button
+        android:id = "@+id/acceptButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_home1"
+        android:text="Play now"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

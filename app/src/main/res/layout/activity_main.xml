@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/amithetriggerofyourgun"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whatsnumber1.rargee.MainActivity">
+
+<LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_alignParentTop="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/rainbowHighlight"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingBottom="8dp"
+        tools:text="Press the link button to authenticate."/>
+
+    <TextView
+        android:id="@+id/bridge_ip_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text=" Bridge IP:192.168.1.1:600026"
+        android:paddingBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/pushlink_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pushlink_image"/>
+
+    <ListView
+        android:id="@+id/bridge_discovery_result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="225dp"
+        android:weightSum="3">
+
+    <Button
+        android:id="@+id/randomize_lights_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="55sp"
+        android:background="@android:color/transparent"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:text="Play"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/high_score_button"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="0dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:textSize="55sp"
+        android:text="Scores"/>
+
+    <Button
+        android:id="@+id/bridge_discovery_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:textSize="55sp"
+        android:text="New Bridge"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/triangle_up"
+            android:text="Brightness"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/bri_level"/>
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/triangle_up"
+            android:text="Sound"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/sound_on_off"/>
+
+</RelativeLayout>

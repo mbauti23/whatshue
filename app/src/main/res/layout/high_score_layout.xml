@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/black"
+              android:id="@+id/scoreView">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/rainbowHighlight"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="50dp"
+                  android:orientation="vertical"
+                  android:id="@+id/scoreView2">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:text="Highest level with 1 light:"/>
+
+
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="0"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/space2"
+            android:background="@android:color/white"
+            />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Highest level with 2 lights:"/>
+
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="0"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/space3"
+            android:background="@android:color/white"
+            />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Highest level with 3 lights:"/>
+
+    <TextView
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="0"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/space4"
+            android:background="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Highest level with 4 lights:"/>
+
+        <TextView
+            android:id="@+id/fourth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="0"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

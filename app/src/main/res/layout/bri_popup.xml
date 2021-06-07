@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:touchscreenBlocksFocus="false"
+    android:id="@+id/popup_element2">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textAlpha1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#99FFFFFF"
+            android:longClickable="false"
+            android:clickable="false"
+            android:textSize="70sp"
+            android:text="Change"/>
+
+
+        <FrameLayout
+            android:id="@+id/seekArcContainer"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" >
+
+            <whatsnumber1.rargee.SeekArc
+                android:id="@+id/pplWithin"
+                android:padding="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="24dp"
+                seekarc:rotation="0"
+                seekarc:startAngle="0"
+                seekarc:sweepAngle="375"
+                seekarc:thumb="@android:color/transparent"
+                seekarc:max="254"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/lightbulb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/lightbulb"/>
+
+        </FrameLayout>
+
+
+
+        <TextView
+            android:id="@+id/textAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:longClickable="false"
+            android:clickable="false"
+            android:layout_marginTop="5dp"
+            android:textSize="40sp"
+            android:text="Brightness"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
